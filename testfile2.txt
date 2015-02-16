@@ -1,0 +1,14 @@
+Add Thomas 4111111111111111 $1000
+Add Laura 5454545454545454 $3000
+Add Larry 1234567890123456 $2000
+Charge Thomas $500
+Charge Thomas $800
+Charge Laura $7
+Credit Laura $100
+Credit Larry $200
+Add Dan 123412341234123412 $6000
+Credit Dan $1000
+Charge Dan $500
+Charge Dan $400
+Charge Dan $1100
+Charge Dan $10000

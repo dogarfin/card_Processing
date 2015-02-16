@@ -1,0 +1,35 @@
+Debit Card Processing
+
+USAGE INSTRUCTIONS: 
+Both versions of the debit card processing have four possible commands: charge, credit, summary, and add. The only difference between the two implementations is that for the AL form (Arraylist), every instance of cards is new. In the database version every new instance contains information from the previous instances. 
+Every dollar amount needs to be prepended with a $
+The format for each command needs to follow the below syntax
+
+There are 2 ways to process commands: 
+1) Enter commands line-by-line
+ex. 
+$ python creditCard.py 
+Please enter a file path, credit card information delimited by spaces, or exit: add Ben 123412341234123412 $1000
+Please enter a file path, credit card information delimited by spaces, or exit: charge Tom $500
+Please enter a file path, credit card information delimited by spaces, or exit: charge Tom $800
+Please enter a file path, credit card information delimited by spaces, or exit: credit Tom $300
+Please enter a file path, credit card information delimited by spaces, or exit: summary
+Tom: $500
+Please enter a file path, credit card information delimited by spaces, or exit: exit
+Tom: $500
+
+2) Prompt for text file
+ex.
+$ python creditCard.py
+Please enter a file path, credit card information delimited by spaces, or exit: ../testfile4.txt
+Please enter a file path, credit card information delimited by spaces, or exit: exit
+Ed: $-93
+Mark: error
+Jeff: $500
+
+After exiting the program, you will find a summary file in the directory called 'summaryFiles/' 
+
+There are three test files for processing commands that can be run:
+testfile1.txt
+testfile2.txt
+testfile3.txt
